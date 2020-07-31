@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/searchTxt"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:layout_gravity="center_vertical"
+        android:inputType="textPersonName"
+        android:hint="Szukana fraza..."/>
+
+
+    <Button
+        android:id="@+id/button_frag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/buttonrounded"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:text="Szukaj"
+        android:textColor="@color/white"
+        android:padding="@dimen/text_margin"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sortuj według"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Switch
+        android:id="@+id/steamSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:checked="true"
+        android:text="Steam"
+        android:textColorLink="#0337D6" />
+
+    <Switch
+        android:id="@+id/gogSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:checked="true"
+        android:text="Gog" />
+
+    <Switch
+        android:id="@+id/wsSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:checked="true"
+        android:text="Windows Store" />
+
+</LinearLayout>
